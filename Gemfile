@@ -73,4 +73,3 @@ end
 
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-turbo'
 gem 'responders', '~> 3.1'
-
