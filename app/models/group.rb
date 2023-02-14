@@ -5,4 +5,12 @@ class Group < ApplicationRecord
 
   validates :name, presence: true
   validates :icon, presence: true
+
+  def total_amount
+    sum = 0
+    group_entities.each do |item|
+      sum += item.entity.amount
+    end
+    sum
+  end
 end

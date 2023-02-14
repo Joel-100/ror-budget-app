@@ -9,9 +9,9 @@
             </div>
             <div>
               <h4 class="title"><%= group.name %></h4>
-              <p>Total Amount: ₵<%= group.total_amount %></p>
+              <p>Total Amount: $<%= group.total_amount %></p>
               <p>
-                <%= link_to "Transactions", user_group_deals_path(current_user, group) %>
+                <%= link_to "Transactions", user_group_entities_path(current_user, group) %>
               </p>
             </div>
           </div>
@@ -21,3 +21,8 @@
   <% end %>
 </div>
 </section>
+<div>
+  <%= link_to new_user_group_path(current_user) do %>
+    Add A Category
+  <% end %>
+</div>
