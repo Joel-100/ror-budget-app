@@ -1,0 +1,20 @@
+<div id="transactions">
+  <% @group.transactions.each do |transaction| %>
+    <div class="trans-card">
+      <div class="trans-card-body">
+        <div>
+          <h5><%= transaction.entity.name %></h5>
+        </div>
+        <div>
+          <p>$<%= transaction.entity.amount %></p>
+          <p>$<%= transaction.group.name %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <div class="action">
+    <%= link_to new_user_group_entity_path(current_user, @group) do %>
+      Add Transaction
+    <% end %>
+  </div>
+</div>

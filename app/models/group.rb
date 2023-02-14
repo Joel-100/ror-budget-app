@@ -13,4 +13,8 @@ class Group < ApplicationRecord
     end
     sum
   end
+
+  def transactions
+    group_entities.order(created_at: :desc)
+  end
 end
