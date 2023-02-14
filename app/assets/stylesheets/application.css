@@ -14,11 +14,11 @@
  *= require_self
  */
 
-body{
+body {
   background-color: #3778c2;
   color: #191c1f;
-  border-radius: 10px 5%/ 20px 30px ;
-  button {
-    text-align: center;
-  }
+}
+
+button {
+  text-align: center;
 }
