@@ -40,6 +40,7 @@ After you're finished please remove all the comments and instructions!
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Video Presentation](#video-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -108,7 +109,11 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://ror-budget-app.onrender.com/)
+
+## 🚀 Video Presentation <a name="video-demo"></a>
+-[Video Presentation](Coming soon)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
