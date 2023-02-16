@@ -1,24 +1,64 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
+html,
 body {
-  background-color: #3778c2;
-  color: #191c1f;
+  margin: 0;
+  padding: 0;
 }
 
-button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*****************
+  Homepage
+*****************/
+section.categories {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+div#groups {
+  padding: 1rem;
+}
+
+div.card {
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+div.card-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.image img {
+  width: 100px;
+  height: 100px;
+}
+
+div.add-category {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: #5fb523;
+}
+
+div.add-category a {
+  display: block;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }

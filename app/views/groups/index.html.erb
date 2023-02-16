@@ -1,28 +1,24 @@
-<section>
+<section class="categories">
   <div id="groups">
     <% @groups.each do |group| %>
-      <div>
-        <div class="card">
-          <div class="card-body">
-            <div class="image">
-              <img src="<%= group.icon %>" alt="<%= group.name %>" />
-            </div>
-            <div>
-              <h4 class="title"><%= group.name %></h4>
-              <p>Total Amount: $<%= group.total_amount %></p>
-              <p>
-                <%= link_to "Transactions", user_group_entities_path(current_user, group) %>
-              </p>
-            </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img src="<%= group.icon %>" alt="<%= group.name %>" />
+          </div>
+          <div>
+            <%= link_to user_group_entities_path(current_user, group), class: "title" do %>
+              <%= group.name %>
+            <% end %>
+            <p>Total Amount: $<%= group.total_amount %></p>
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
+  <div class="add-category">
+    <%= link_to new_user_group_path(current_user) do %>
+      Add A Category
+    <% end %>
+  </div>
 </section>
-<div>
-  <%= link_to new_user_group_path(current_user) do %>
-    Add A Category
-  <% end %>
-</div>
