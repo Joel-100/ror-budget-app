@@ -68,10 +68,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'webdrivers'
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'webdrivers'
 end
 
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-turbo'
-gem 'responders', '~> 3.1'
 gem 'rails-controller-testing'
+gem 'responders', '~> 3.1'
