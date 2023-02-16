@@ -1,20 +1,23 @@
 <div id="transactions">
+  <div class="cat-details">
+    <p>Total Amount: $<%= @group.total_amount %></p>
+  </div>
   <% @group.transactions.each do |transaction| %>
     <div class="trans-card">
       <div class="trans-card-body">
         <div>
-          <h5><%= transaction.entity.name %></h5>
+          <h4><%= transaction.entity.name %></h4>
+          <p><%= transaction.group.name %></p>
         </div>
         <div>
           <p>$<%= transaction.entity.amount %></p>
-          <p>$<%= transaction.group.name %></p>
         </div>
       </div>
     </div>
   <% end %>
-  <div class="action">
-    <%= link_to new_user_group_entity_path(current_user, @group) do %>
-      Add Transaction
-    <% end %>
-  </div>
+</div>
+<div class="add-trans">
+  <%= link_to new_user_group_entity_path(current_user, @group) do %>
+    Add a Transaction
+  <% end %>
 </div>
