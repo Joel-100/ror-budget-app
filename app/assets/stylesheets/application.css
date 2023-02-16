@@ -124,3 +124,24 @@ div.add-trans a {
   color: #fff;
   text-transform: uppercase;
 }
+
+div.cat-navbar {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+div.cat-navbar button {
+  padding: 0.3rem;
+  font-size: 1.1rem;
+}
+
+div.cat-navbar a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
