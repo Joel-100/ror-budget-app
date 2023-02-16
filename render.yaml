@@ -1,0 +1,18 @@
+databases:
+  - name: ror-budget-app
+    databaseName: ror-budget-app
+    user: ror-budget-app
+
+services:
+  - type: web
+    name: ror-budget-app
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ror-budget-app
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
