@@ -1,3 +1,10 @@
+<div class="cat-navbar">
+  <%= link_to user_groups_path(current_user) do %>
+    <
+  <% end %>
+  <h3>Transactions</h3>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+  </div>
 <div id="transactions">
   <div class="cat-details">
     <p>Total Amount: $<%= @group.total_amount %></p>

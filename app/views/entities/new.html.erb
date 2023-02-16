@@ -1,3 +1,10 @@
+<div class="cat-navbar">
+  <%= link_to user_group_entities_path(current_user, @group) do %>
+    <
+  <% end %>
+  <h3>New Transaction</h3>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+  </div>
 <section class="new-cat">
   <h3>New Transaction</h3>
   <div class="form">

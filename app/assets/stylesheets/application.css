@@ -32,6 +32,7 @@ div.card {
   border: 1px solid gray;
   padding: 1rem;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 div.card-body {
@@ -99,6 +100,7 @@ div.trans-card {
   border: 1px solid gray;
   padding: 1rem;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 div.trans-card-body {
@@ -123,4 +125,92 @@ div.add-trans a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+
+div.cat-navbar {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+div.cat-navbar button {
+  padding: 0.3rem;
+  font-size: 1.1rem;
+}
+
+div.cat-navbar a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.notice {
+  background-color: #5fb523;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.alert {
+  background-color: rgb(255, 205, 113);
+  color: rgb(87, 56, 0);
+  text-align: center;
+  padding: 0.2rem;
+}
+
+section.splash-screen {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #3778c2;
+  color: #fff;
+}
+
+section.splash-screen h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+section.splash-screen a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #5fb523;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+section.splash-screen a:first-child {
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+section.splash-screen a:last-child {
+  background-color: #5fb523;
+  transition: all 0.5s ease-in-out;
+}
+
+section.splash-screen a:first-child:hover {
+  background-color: #5fb523;
+}
+
+section.splash-screen a:last-child:hover {
+  background-color: #3d7713;
+  border-color: #3d7713;
+}
+
+section#login,
+section#signup {
+  padding: 1rem;
+}
+
+div.field {
+  margin-bottom: 1rem;
 }
