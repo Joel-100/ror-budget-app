@@ -62,3 +62,24 @@ div.add-category a {
   color: #fff;
   text-transform: uppercase;
 }
+
+
+/*****************
+  New Category
+*****************/
+section.new-cat {
+  padding: 1rem;
+}
+
+div.form {
+  margin-top: 1rem;
+}
+
+.form-control {
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.add-btn {
+  padding: 0.5rem;
+}
