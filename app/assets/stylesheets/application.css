@@ -82,3 +82,45 @@ div.form {
 .add-btn {
   padding: 0.5rem;
 }
+
+/*****************
+  Transactions
+*****************/
+div#transactions {
+  padding: 1rem;
+}
+
+div.cat-details p {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+div.trans-card {
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+div.trans-card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.add-trans {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #5fb523;
+}
+
+div.add-trans a {
+  display: block;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
