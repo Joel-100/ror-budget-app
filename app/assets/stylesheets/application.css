@@ -145,3 +145,17 @@ div.cat-navbar a {
   color: #fff;
 }
 
+.notice {
+  background-color: #5fb523;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.alert {
+  background-color: rgb(255, 205, 113);
+  color: rgb(87, 56, 0);
+  text-align: center;
+  padding: 0.2rem;
+}
+
