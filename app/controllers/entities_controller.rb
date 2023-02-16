@@ -18,7 +18,9 @@ class EntitiesController < ApplicationController
     respond_to do |format|
       if @entity.save
         GroupEntity.create(group: @group, entity: @entity)
-        format.html { redirect_to user_group_entities_path(current_user, @group), notice: 'Transaction was successfully created.' }
+        format.html do
+          redirect_to user_group_entities_path(current_user, @group), notice: 'Transaction was successfully created.'
+        end
       else
         format.html { render :new, status: :unprocessable_entity }
       end
