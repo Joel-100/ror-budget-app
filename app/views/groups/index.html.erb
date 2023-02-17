@@ -1,0 +1,28 @@
+<div class="cat-navbar">
+  <h3>Categories</h3>
+  <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+</div>
+<section class="categories">
+  <div id="groups">
+    <% @groups.each do |group| %>
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img src="<%= group.icon %>" alt="<%= group.name %>" />
+          </div>
+          <div>
+            <%= link_to user_group_entities_path(current_user, group), class: "title" do %>
+              <%= group.name %>
+            <% end %>
+            <p>Total Amount: $<%= group.total_amount %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="add-category">
+    <%= link_to new_user_group_path(current_user) do %>
+      Add A Category
+    <% end %>
+  </div>
+</section>

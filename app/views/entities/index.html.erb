@@ -1,0 +1,30 @@
+<div class="cat-navbar">
+  <%= link_to user_groups_path(current_user) do %>
+    <
+  <% end %>
+  <h3>Transactions</h3>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+  </div>
+<div id="transactions">
+  <div class="cat-details">
+    <p>Total Amount: $<%= @group.total_amount %></p>
+  </div>
+  <% @group.transactions.each do |transaction| %>
+    <div class="trans-card">
+      <div class="trans-card-body">
+        <div>
+          <h4><%= transaction.entity.name %></h4>
+          <p><%= transaction.group.name %></p>
+        </div>
+        <div>
+          <p>$<%= transaction.entity.amount %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="add-trans">
+  <%= link_to new_user_group_entity_path(current_user, @group) do %>
+    Add a Transaction
+  <% end %>
+</div>

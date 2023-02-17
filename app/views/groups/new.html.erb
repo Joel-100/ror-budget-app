@@ -1,0 +1,28 @@
+<div class="cat-navbar">
+  <%= link_to user_groups_path(current_user) do %>
+    <
+  <% end %>
+  <h3>New Category</h3>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+  </div>
+<section class="new-cat">
+  <h3>New Category</h3>
+  <div class="form">
+    <%= form_with model: @group, url: user_groups_path(current_user) do |form| %>
+      <div style="margin-bottom: 0.7rem;">
+        <%= form.label :name, style: "display: block" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+      <div style="margin-bottom: 0.7rem;">
+        <%= form.label :icon, style: "display: block" %>
+        <%= form.text_field :icon, placeholder: "Paste link to the icon here...", class: "form-control" %>
+      </div>
+      <div style="margin-bottom: 0.7rem;">
+        <%= form.submit "Add Category", class: "add-btn" %>
+      </div>
+    <%end%>
+  </div>
+  <div>
+    <%= link_to "Back to categories", user_groups_path(current_user) %>
+  </div>
+</section>
