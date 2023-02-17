@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h3><b>ror-budget-app</b></h3>
+  <h3><b>Budget App</b></h3>
 
 </div>
 
