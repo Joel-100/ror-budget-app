@@ -58,9 +58,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Budget App] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
+
+**Budget App** helps you to manage your budget. The app allows users to create categories and add transactions to the categories.
 
 **[your_project__name]** is a...
 
@@ -68,19 +70,17 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://www.puppet.com/docs/puppet/5.5/lang_template_erb.html#:~:text=An%20ERB%20template%20looks%20like,to%20control%20the%20templates'%20output.">ERB Templating Engine</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -91,15 +91,19 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Register a user]**
+- **[Login a user]**
+- **[Create categories]**
+- **[Create Transactions]**
+- **[View a user's categories]**
+- **[View all transactions for a category]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +113,9 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]c
+- [Budget App](https://ror-budget-app.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Video Presentation <a name="video-demo"></a>
 -[Video Presentation](https://drive.google.com/file/d/1JDjzfBVmtEbv2zb_rcwAAXJsNXGrCatb/view?usp=share_link)
@@ -129,83 +135,55 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
 ```sh
  gem install rails
 ```
- -->
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
-
 ### Install
 
 Install this project with:
-
-<!--
-Example command:
 
 ```sh
   cd my-project
   gem install
 ```
---->
-
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
   rails server
 ```
---->
-
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
   bin/rails test test/models/article_test.rb
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+[Render](https://render.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -219,11 +197,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Like a category]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,7 +217,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project,kindly give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -253,23 +227,10 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+- Microverse
+- [Gregoire Vella](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), owner of the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -278,7 +239,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
