@@ -109,10 +109,10 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://ror-budget-app.onrender.com/)
+- [Live Demo Link]c
 
 ## 🚀 Video Presentation <a name="video-demo"></a>
--[Video Presentation](Coming soon)
+-[Video Presentation](https://drive.google.com/file/d/1JDjzfBVmtEbv2zb_rcwAAXJsNXGrCatb/view?usp=share_link)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
